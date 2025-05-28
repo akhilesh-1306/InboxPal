@@ -41,14 +41,14 @@ public class EmailGeneratorService {
             }
         );
         
-        String response = webClient.post().uri(apiUrl+apiKey).header("Content-Type", "application/json").retrieve().bodyToMono(String.class).block();
+        String response = webClient.post().uri(apiUrl+apiKey).header("Content-Type", "application/json").bodyValue(request).retrieve().bodyToMono(String.class).block();
 
         return extractResponse(response);
     }
 
     public String buildPrompt(EmailRequest email){
         StringBuilder prompt = new StringBuilder();
-        prompt.append("Generate a professional email reply for the following email. Please dont generate subject line");
+        prompt.append("Generate a professional email reply for the following email. Please dont generate subject line and dont give many option. I want one final response such that i can directly use it as a reply");
         if(email.getTone() != null && !email.getTone().isEmpty()){
             prompt.append(" Use a").append(email.getTone()).append(" tone.");
         }
