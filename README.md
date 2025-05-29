@@ -20,7 +20,7 @@
 Built using **React** and **Material UI** with a beautiful, responsive design.
 
 🔗 **Try the frontend**: [InboxPal Web App](https://inbox-pal.vercel.app/)  
-📽️ **Watch the Chrome extension Demo Video**: [InboxPal Demo on YouTube](https://youtube.com/your-demo-video)
+📽️ **Watch the Chrome extension Demo Video**: [InboxPal Extension Demonstration](https://drive.google.com/file/d/1F_YxyI7op8eHqg5662-51tHQ4m7W5nr0/view?usp=sharing)
 
 ## 🛠️ Tech Stack
 
