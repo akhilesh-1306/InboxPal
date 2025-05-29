@@ -41,7 +41,7 @@ const EmailReplyGenerator = () => {
   setLoading(true);
   setError('');
   try {
-    const res = await axios.post('http://localhost:8080/api/email-generator/generate', {
+    const res = await axios.post('https://inboxpal-backend.onrender.com/api/email-generator/generate', {
       emailContent: email,
       tone
     });

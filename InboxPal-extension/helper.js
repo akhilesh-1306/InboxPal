@@ -50,7 +50,7 @@ function injectButton(){
                     break;
                 }
             }
-            const response = await fetch('http://localhost:8080/api/email-generator/generate', {
+            const response = await fetch('https://inboxpal-backend.onrender.com/api/email-generator/generate', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
